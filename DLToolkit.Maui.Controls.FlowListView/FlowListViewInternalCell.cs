@@ -544,7 +544,6 @@ namespace DLToolkit.Maui.Controls.FlowListView
             });
 
             view.GestureRecognizers.Add(new TapGestureRecognizer() { Command = command });
-            view.GestureRecognizers.Add(new ClickGestureRecognizer() { Command = command, Buttons = ButtonsMask.Primary, NumberOfClicksRequired = 1 });
         }
 
         async Task ExecuteTapGestureRecognizer(View view)
